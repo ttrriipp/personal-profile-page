@@ -21,7 +21,7 @@ A responsive personal portfolio website built with HTML and CSS, showcasing my s
 
 1. Clone the repository:
 bash
-git clone https://github.com/your-username/personal-profile-page.git
+git clone https://github.com/ttrriipp/personal-profile-page.git
 
 2. Open `index.html` in your preferred browser
 

@@ -97,6 +97,8 @@ img {
   border-radius: 20px;
 }
 
+
+
 section {
   padding-top: 150px;
   display: flex;
@@ -209,6 +211,10 @@ Media Queries
 @media screen and (max-width: 500px) {
   .intro .text {
     text-align: center;
+  }
+
+  #skills {
+    margin-top: 100px;
   }
 
 }

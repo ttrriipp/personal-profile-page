@@ -7,15 +7,18 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: antiquewhite;
 }
 
 header {
   display: flex;
   flex-direction: column;
-  background-color: gray;
   justify-content: space-between;
   align-items: center;
   border-style: solid;
+  position: fixed;
+  width: 100%;
+  background-color: antiquewhite;
 }
 
 .header-title {
@@ -38,4 +41,46 @@ a {
 
 nav {
   padding: 10px 0;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.text .secondary {
+  font-size: 18px;
+}
+
+img {
+  height: 400px;
+  border-radius: 20px;
+}
+
+#skills {
+  height: 100vh;
+}
+
+#projects {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+}
+
+section {
+  border-top: solid;
+  padding: 150px;
 }

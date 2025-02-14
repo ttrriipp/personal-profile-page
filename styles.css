@@ -9,7 +9,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: antiquewhite;
-  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 100px;
+  margin: 0 auto;
 }
 
 header {
@@ -23,12 +25,17 @@ header {
   background-color: antiquewhite;
 }
 
+.header-nav {
+  flex-wrap: wrap;
+}
+
 .header-title {
   border-bottom: solid;
   width: 100%;
   text-align: center;
   padding: 20px;
 }
+
 
 .header-nav>ul>li>a:hover {
   color: salmon;
@@ -63,11 +70,14 @@ nav {
   align-items: center;
   text-align: start;
   justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .intro .text {
   min-width: 350px;
   max-width: 400px;
+  margin: 0 20px;
 }
 
 .intro .text h3 {
@@ -78,14 +88,16 @@ nav {
   font-size: 3rem;
 }
 
+.image {
+  display: flex;
+}
+
 img {
   height: 400px;
   border-radius: 20px;
 }
 
 section {
-  height: 100vh;
-  border-top: solid;
   padding-top: 150px;
   display: flex;
   flex-direction: column;
@@ -97,6 +109,7 @@ section {
   justify-content: center;
   gap: 50px;
   margin-top: 69px;
+  flex-wrap: wrap;
 }
 
 .skill-list {
@@ -107,7 +120,7 @@ section {
 
 .skill-list>li {
   font-size: 2rem;
-  width: 500px;
+  width: 300px;
   border: solid black;
   border-radius: 8px;
   padding: 10px;
@@ -123,6 +136,7 @@ section {
   gap: 10px;
   padding: 50px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -155,7 +169,7 @@ section {
 .contact-container {
   display: flex;
   border: solid;
-  width: 400px;
+  width: 300px;
   text-align: center;
   justify-content: center;
   border-radius: 10px;
@@ -186,4 +200,15 @@ section {
 
 .links-menu>li:hover {
   background-color: salmon;
+}
+
+/* 
+Media Queries
+ */
+
+@media screen and (max-width: 500px) {
+  .intro .text {
+    text-align: center;
+  }
+
 }

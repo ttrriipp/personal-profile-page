@@ -47,9 +47,7 @@ nav {
 
 #about {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  gap: 50px;
 }
 
 .section-title {
@@ -59,9 +57,8 @@ nav {
 .intro {
   display: flex;
   align-items: center;
-  gap: 50px;
   text-align: start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .intro .text {
@@ -78,22 +75,40 @@ nav {
 }
 
 img {
-  height: 350px;
+  height: 400px;
   border-radius: 20px;
 }
 
-#skills {
-  height: 100vh;
-}
-
-#projects {
-  height: 100vh;
-}
-
-#contact {
-  height: 100vh;
-}
-
 section {
+  height: 100vh;
   border-top: solid;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-list>li {
+  font-size: 2rem;
+  width: 500px;
+  border: solid black;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.skills-container>div>h2 {
+  margin-bottom: 20px;
 }

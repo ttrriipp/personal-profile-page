@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
   background-color: antiquewhite;
+  flex-wrap: wrap;
 }
 
 header {
@@ -48,23 +50,35 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-around;
-  gap: 100px;
+}
+
+.section-title {
+  font-size: 3.5rem;
 }
 
 .intro {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   gap: 50px;
+  text-align: start;
+  justify-content: space-between;
 }
 
-.text .secondary {
-  font-size: 18px;
+.intro .text {
+  min-width: 350px;
+  max-width: 400px;
+}
+
+.intro .text h3 {
+  font-size: 2rem;
+}
+
+.intro .text h1 {
+  font-size: 3rem;
 }
 
 img {
-  height: 400px;
+  height: 350px;
   border-radius: 20px;
 }
 
@@ -82,5 +96,4 @@ img {
 
 section {
   border-top: solid;
-  padding: 150px;
 }
